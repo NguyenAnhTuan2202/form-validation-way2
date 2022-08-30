@@ -1,0 +1,22 @@
+3:20 thêm rule cho thẻ input thay vì như cách 1 là tạo ra một object và có key là rule 
+6:54 sử dụng một câu lệnh đk if để check form đã được lấy ra chưa phòng trường hợp người dùng truyền sai selector
+9:58 do inputs là một NodeList nên không thể sử dụng các method của Array vì vậy dùng for thay thế
+10:45 attribuite rule là do ta tự định nghĩa, vì thế phải sử dụng phương thức getAttribute để lấy ra cái value của attribute đó
+12:55 bắt đầu viết các function cho các rule và lưu dưới dạng 1 OBJECT
+16:00 sử dụng vòng lặp trùng nhau để xử lí vấn đề nhập 6 kí tự
+17:35 để lấy ra các hàm đã định nghĩa của object 
+18:02 dùng phương thức split để tách chuỗi bằng kí tự truyền vào và RETURN về một mảng
+20:52 đã lấy ra được các rule có trong input.rule
+
+21:18 bây giờ thằng formRules phải lấy ra được các array mà trong array lại là các hàm required, email
+22:00 sử dụng kĩ thuật if else để xét lần đầu tiên chạy không phải là cái mảng thì khởi tạo cho nó cái mảng các lần sau
+trở đi thì nó đã là cái mảng thì chỉ cần push() vào thôi
+23:44 validatorRules[rule] trả về cái hàm rồi push vào mảng
+26:00 do kết quả của function thứ 1 trả về là 1 function thứ 2 thì ta truyền đối số vào để chạy hàm bên trong
+27:00 Tư duy logic xử lí với số 6 
+31:14 Bắt đầu gán những sự kiện cho những thẻ input
+39:11 viết function để chọc ra form-group rồi chọc vào form-message
+
+43:28 hiển thị message lỗi ra UI
+45:13 Viết function handleClearError khi user đã nhập vào input
+47:00 Viết sự kiện khi nhấn nút submit
